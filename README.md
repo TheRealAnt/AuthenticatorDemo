@@ -8,8 +8,13 @@
   </a>
 </p>
 
-https://github.com/TheRealAnt/AuthenticatorDemo/assets/22860503/5726d82c-3cd6-4019-874f-928dc186e4db
-https://github.com/TheRealAnt/AuthenticatorDemo/assets/22860503/775d41b5-2566-4a1b-8c2f-b697ea737363
+<img src="https://github.com/TheRealAnt/AuthenticatorDemo/assets/22860503/775d41b5-2566-4a1b-8c2f-b697ea737363" width="164.5">
+<img src="https://github.com/TheRealAnt/AuthenticatorDemo/assets/22860503/5726d82c-3cd6-4019-874f-928dc186e4db" width="200">
+
+
+
+
+
 
 ## Features
 
