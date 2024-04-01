@@ -11,6 +11,11 @@
 		2BB520D72BBB352600136D7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB520D62BBB352600136D7C /* ContentView.swift */; };
 		2BB520D92BBB352800136D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB520D82BBB352800136D7C /* Assets.xcassets */; };
 		2BB520DD2BBB352800136D7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB520DC2BBB352800136D7C /* Preview Assets.xcassets */; };
+		2BB520E72BBB366700136D7C /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB520E62BBB366700136D7C /* Title.swift */; };
+		2BB520E92BBB36D900136D7C /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB520E82BBB36D900136D7C /* PrimaryButton.swift */; };
+		2BB520EC2BBB387A00136D7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB520EB2BBB387A00136D7C /* LoginView.swift */; };
+		2BB520EE2BBB398000136D7C /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB520ED2BBB397F00136D7C /* AuthenticationManager.swift */; };
+		2BB520F02BBB45FC00136D7C /* CredentialsLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB520EF2BBB45FC00136D7C /* CredentialsLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		2BB520D82BBB352800136D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BB520DA2BBB352800136D7C /* AuthenticatorDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AuthenticatorDemo.entitlements; sourceTree = "<group>"; };
 		2BB520DC2BBB352800136D7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BB520E62BBB366700136D7C /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		2BB520E82BBB36D900136D7C /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		2BB520EB2BBB387A00136D7C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2BB520ED2BBB397F00136D7C /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		2BB520EF2BBB45FC00136D7C /* CredentialsLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				2BB520D42BBB352600136D7C /* AuthenticatorDemoApp.swift */,
-				2BB520D62BBB352600136D7C /* ContentView.swift */,
+				2BB520ED2BBB397F00136D7C /* AuthenticationManager.swift */,
+				2BB520EA2BBB386A00136D7C /* Views */,
+				2BB520E32BBB363C00136D7C /* Components */,
 				2BB520D82BBB352800136D7C /* Assets.xcassets */,
 				2BB520DA2BBB352800136D7C /* AuthenticatorDemo.entitlements */,
 				2BB520DB2BBB352800136D7C /* Preview Content */,
@@ -67,6 +79,25 @@
 				2BB520DC2BBB352800136D7C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BB520E32BBB363C00136D7C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2BB520E62BBB366700136D7C /* Title.swift */,
+				2BB520E82BBB36D900136D7C /* PrimaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2BB520EA2BBB386A00136D7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BB520EF2BBB45FC00136D7C /* CredentialsLoginView.swift */,
+				2BB520D62BBB352600136D7C /* ContentView.swift */,
+				2BB520EB2BBB387A00136D7C /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB520D72BBB352600136D7C /* ContentView.swift in Sources */,
+				2BB520E72BBB366700136D7C /* Title.swift in Sources */,
+				2BB520F02BBB45FC00136D7C /* CredentialsLoginView.swift in Sources */,
+				2BB520E92BBB36D900136D7C /* PrimaryButton.swift in Sources */,
+				2BB520EE2BBB398000136D7C /* AuthenticationManager.swift in Sources */,
+				2BB520EC2BBB387A00136D7C /* LoginView.swift in Sources */,
 				2BB520D52BBB352600136D7C /* AuthenticatorDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +310,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -282,9 +319,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -292,10 +329,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonie.AuthenticatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,6 +350,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -320,9 +359,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -330,10 +369,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonie.AuthenticatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
